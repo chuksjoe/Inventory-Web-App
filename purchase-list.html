@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en=US">
+	<head>
+		<title>My Inventory Web App - Stock View</title>
+		<link rel="stylesheet" href="css/general.css"/>
+		<link rel="stylesheet" href="css/stock-style.css"/>
+	</head>
+	<body>
+		<header>
+			<div id="header-left">
+				<a href="menu-page.html"><img src="" alt="LOGO"/></a>
+			</div>
+			<div id="header-right">
+				<input type="search" placeholder="Search by Purchase ID/Staff ID/Supplier ID" name="stock-search" size="40"/>
+				<input type="button" name="search" value="Search"/>
+			</div>
+		</header>
+		<div id="container">
+			<div id="side-nav">
+				<a href="stock-view.html">STOCK VIEW</a>
+				<a href="sales-list.html">SALES</a>
+				<a class="current-page" href="purchase-list.html">PURCHASE</a>
+				<a href="#">REPORTS</a>
+				<a href="#">CUSTOMERS</a>
+				<a href="#">SUPPLIERS</a>
+			</div>
+			<div id="table-view">
+				<div class="table-btns-div">
+					<a id="add-item-btn" href="new-receipt.html">Enter New Receipt</a>
+				</div>
+				<table>
+					<thead>
+						<tr>
+							<th>PURCHASE ID</th><th>STAFF ID</th><th>SUPPLIER NAME(ID)</th><th>DATE/TIME</th><th>TOTAL AMOUNT(N)</th>
+							<th>DISCOUNT(N)</th><th>PAID(N)</th><th>BALANCE(N)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>PU0001</td><td>ST0001</td><td>Emzor Dealer(SU0001)</td><td>23-05-2018/12:45:00</td><td>50000</td><td>1000</td><td>46000</td><td>3000</td>
+						</tr>
+						<tr>
+							<td>PU0001</td><td>ST0001</td><td>Emmatex plc(SU0001)</td><td>23-05-2018/12:45:00</td><td>25000</td><td>1050</td><td>20950</td><td>3000</td>
+						</tr>
+						<tr>
+							<td>PU0001</td><td>ST0001</td><td>Greson Drugs(SU0001)</td><td>23-05-2018/12:45:00</td><td>32000</td><td>1000</td><td>28000</td><td>3000</td>
+						</tr>
+						<tr>
+							<td>PU0001</td><td>ST0001</td><td>Zegot Pham(SU0001)</td><td>23-05-2018/12:45:00</td><td>23000</td><td>900</td><td>19100</td><td>3000</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="4">TOTAL:</td><td>130,000:00</td><td>3,950:00</td><td>126,050:00</td><td>12,000:00</td>
+						</tr>
+					</tfoot>
+				</table>
+				<p>Daily Sales Summary: (A button that either pops up a window/div box or opens a new page that displays a pictorial representation of the daily sales)<br>I will also integrate weekly, monthly and yearly sales summary, and also Summary for a specified range of days.</p>
+			</div>
+		</div>
+		<!--<div id="sales-detail-box">
+			yet to be constructed
+		</div>
+		-->
+		<footer>
+			<div id="footer-left">
+				<p id="version">Version 1.0</p>
+			</div>
+			<div id="footer-right">
+				<p><a href="#">About</a>
+				<a href="#">Contact Us</a>
+				<a href="#">Help</a></p>
+			</div>
+		</footer>
+		<!--javascripts files -->
+		<script src=""></script>
+	</body>
+</html>

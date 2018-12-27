@@ -1,0 +1,170 @@
+header{
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	margin: 0px;
+	height: 60px;
+	background-color: #89A4A8;
+}
+#header-left{
+	float: left;
+	margin: 20px;
+}
+#header-right{
+	float: right;
+	margin: 20px;
+}
+#container{
+	margin: 60px 0px 55px 0px;
+	width: 100%;
+	height: calc(100vh - 110px) !important;
+	left: 0px; top: 0px;
+	overflow: auto;
+	overflow-x: hidden;
+	position: fixed;
+	background-color: #F1F1F1;
+}
+#side-nav{
+	width: 25%;
+	float: left;
+	height: inherit;
+	position: fixed;
+	left: 0px;
+	overflow: auto;
+	border-right: 2px solid #89A4A8;
+}
+#side-nav a{
+	display: block;
+	height: 70px;
+	margin: auto 10px;
+	font-size: 30px;
+	color: #001532;
+	text-decoration: none;
+	padding: 20px 20px;
+	border-radius: 5px;
+}
+#side-nav a:hover{
+	background-color: #CFE7EE;
+}
+.current-page{
+	background: blue url("") no-repeat;
+}
+
+/*----   ----*/
+.table-btns-div{
+	padding-bottom: 20px;
+	text-align: right;
+}
+#table-view{
+	float: left;
+	margin-left: 25%;
+	padding: 20px;
+	width: 75%;
+	height: 100%;
+	overflow: auto;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+	text-align: left;
+	margin-bottom: 20px;
+}
+thead th{
+	background-color: #001532;
+	color: white;
+	padding: 2px;
+}
+td{
+	padding: 5px 5px;
+}
+tbody tr:last-child td{
+	
+}
+tbody tr{
+	background-color: #DDDDE5;
+}
+tbody tr:nth-child(even){
+	background-color: #C3CFC7;
+}
+tbody tr:hover{
+	background-color: #E8E8FF;
+}
+#add-item-btn{
+	background-color: #7354A8;
+	padding: 10px;
+	color: #DDDDE5;
+	border-radius: 5px;
+	text-decoration: none;
+}
+#add-item-btn:hover{
+	background-color: #7378A8;
+	cursor: pointer;
+}
+tfoot tr:first-child td{
+	border-top: 5px double #001532;
+	padding-top: 20px;
+}
+tfoot tr:not(:first-child) td{
+	border-top: 2px solid #001532;
+}
+
+/*----  For Make Sales Page  ----*/
+#sales-table-view, #purchase-table-view, #header-inside{
+	width: 75%;
+	margin: 0px auto;
+}
+#sales-table-view, #purchase-table-view{
+	background-color: #FFFFFF;
+	padding: 20px;
+}
+#date-time{
+	float: right;
+	font-size: 12px;
+}
+.del-btn{
+	width:32px;
+	background: url("../images/del-btn.png") no-repeat;
+	background-position: 0px 0px;
+}
+.del-btn:hover{
+	cursor: pointer;
+	background-position: -32px 0px;
+}
+
+/*----   FOR THE POP UP BOX FOR ADDING ITEMS TO STOCK OR TO SALES   ---- */
+#add-item-box{
+	position: absolute;
+	width: 300px;
+	left: 50%;
+	top: 40%;
+	transform: translate(-50%, -50%);
+	z-index: 105;
+	background-color: #89A4A8;
+	border-radius: 5px;
+	padding: 20px;
+	text-align: center;
+}
+.box-header{
+	margin: 0px auto 10px auto;
+	border-bottom: 2px solid #001532;
+}
+.add-box-button{
+	width: 30%;
+	height: 30px;
+ }
+.add-box-inputs{
+	width: 100%;
+	height: 25px;
+}
+#name-div, .fw-input-div{
+	width: 260px;
+	margin-bottom: 10px;
+	text-align: left;
+}
+.other-input-div{
+	display: inline-block;
+	width: 126.5px;
+	margin-bottom: 10px;
+	text-align: left;
+}
